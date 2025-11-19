@@ -1,0 +1,491 @@
+       
+       body {
+            font-family: 12pt, Verdana, Arial, Georgia, sans-serif;
+            background-color: rgb(102, 166, 174);
+            margin: 0;
+            overflow-x: hidden;
+            background-attachment: fixed;
+            background-image: url(img/cat_background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .parsize{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+            font-size: 25px;
+        }
+
+/* DropDown menu */
+        .menu {
+            display: block;
+            float: left;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            position: fixed;
+            background-color: rgba(242, 204, 115, 0.5);
+
+        }
+
+        #logo{
+            margin: 1% 1% 0% 0%;
+            width: 15%;
+            height: 15%;
+            float:right;
+        }
+
+        #paw{
+            margin: 5% 0% 0% 5%;
+            animation: pawmotion 2s infinite;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            z-index: 2;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            background-color: rgba(242, 204, 115, 0.5);
+            min-width: 200px;
+            box-shadow: 0px, 8px, 16px, 0px rgba(0, 0, 0, 0.2);
+            z-index: 4;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover img {
+            filter: brightness(1.5);
+            
+        }
+
+        .desc {
+            padding: 5px;
+            text-align: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Coiny;
+            font-size: 20px;
+        }
+
+        .desc a:link,
+        .desc a:visited {
+            display: block;
+            background-color: #28ad85;
+            padding: 10%;
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            text-decoration: none;
+        }
+
+        .desc a:hover,
+        .desc a:active {
+            display: block;
+            background-color: #65f0c6;
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            text-decoration: none;
+        }
+/* End DropDown menu */
+
+        #Welcome{
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: rgb(255, 255, 255);
+            animation: welcomemotion 2s 1;
+        }
+        #WelcomeSpamCat{
+            color: rgb(0, 102, 179);
+        }
+        #WelcomeSpamAdopt{
+            color: rgb(171, 115, 18);
+        }
+        
+
+        .boxForText {
+            display: inline-block;
+        }
+
+        .details{
+            margin-top: 40% ;
+            min-width: 100vw;
+            min-height: 100wh;
+            animation: detailsmotion 3s 1;
+        }
+        .box2 {
+            position: relative;
+            border-top: 10px solid #8b6f3f;
+            padding: 2%;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .box3 {
+            position: relative;
+            padding: 2%;
+            background-color: rgb(102, 163, 127);
+            color: #ffffff;
+        }
+        .box3 img{
+            float:right;
+            padding: 2%;
+            padding-top: 0%;
+        }
+        .box3 p{
+            font-size: 25px;
+            text-align: center;
+            padding: 2%;
+        }
+
+/* Button For adoptpage */
+        #Adopt{
+            padding: 2%;
+            font-size: 20px;
+            color:white;
+            background-color: #2eca3e;
+            border-radius: 5%;
+            text-decoration: none;
+        }
+        #Adopt:active{
+            background-color: #21912c;
+        }
+/* End Button For adoptpage */
+
+/* FORM */
+        .box4 {
+            position: relative;
+            padding: 2%;
+            background-color: rgb(10, 50, 21);
+            color: #ffffff;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .box4 p{
+            display: inline;
+            font-size: 25px;
+            text-align: center;
+            display: inline;
+            float:left;
+        }
+        /* iframe */
+        .box4 iframe{
+            display: inline-block;
+        }
+
+        .container {
+            display: inline-block;
+
+        }
+
+        fieldset {
+            border-radius: 5px;
+            background-color: #e8e6e6;
+            
+            color:black;
+            padding: 20px;
+            margin: 20px;
+            /* float: right; */
+        }
+
+
+
+        .container input[type=text],
+        .container input[type=password] {
+            width: 49%;
+            padding: 2%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        .container input[type=email] {
+            width: 99%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        .container input[type=submit] {
+            background-color: #2eca3e;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container input[type=submit]:hover {
+            filter: brightness(1.5);
+        }
+/* End Form*/
+
+/* Footer */
+        footer{
+            background-color: #262437;
+            padding: 1%;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #footerdiv #mail{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        #footerdiv span{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        footer #mail{
+            
+            color: white;
+            text-decoration: none;
+        }
+        footer #mail:visited{
+            color: #aca0f7;
+            text-decoration: none;
+        }
+/* End Footer */
+
+/* animations */
+
+@keyframes pawmotion{
+    0%{scale: 100%;}
+    50%{scale: 90%;}
+    100%{scale: 100%;}
+}
+
+@keyframes welcomemotion {
+    0%{opacity: 0%;}
+    50%{opacity: 0%; top:40%;}
+    60%{opacity: 33%; top:35%;}
+    70%{opacity: 66%; top:40%;}
+    80%{opacity: 100%; top:40%;}
+    90%{top:35%;}
+    100%{top:40%;}
+}
+
+@keyframes detailsmotion {
+    0%{margin-top: 70%;}
+    50%{margin-top: 35%;}
+    100%{margin-top: 40%;}
+}
+/* End animations */
+
+/* media */
+@media only screen and (max-width: 1048px) {
+        #Welcome{
+            top: 30%;
+        }
+         .details{
+        margin-top: 50%;
+        }
+        iframe{
+        margin-bottom: 2%;
+    }
+
+    @keyframes detailsmotion {
+    0%{margin-top: 70%;}
+    50%{margin-top: 45%;}
+    100%{margin-top: 50%;}
+    }
+
+    @keyframes welcomemotion {
+    0%{opacity: 0%;}
+    50%{opacity: 0%; top:30%;}
+    60%{opacity: 33%; top:25%;}
+    70%{opacity: 66%; top:30%;}
+    80%{opacity: 100%; top:30%;}
+    90%{top:25%;}
+    100%{top:30%;}
+}
+}
+@media only screen and (max-width: 649px) {
+    body{
+        background-size: 140%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    #Welcome{
+        top: 25%;
+        font-size: 20px;
+    }
+    .details{
+        margin-top: 80%;
+    }
+    #humanlovescat{
+        float: none;
+        width: 100%;
+    }
+    .boxForText p{
+        font-size: 16px;
+    }
+    .box4{
+        float: none;
+        width: 100%;
+    }
+    .box4 p{
+        font-size: 16px;
+    }
+
+    /* adopt site */
+    .parsize{
+        font-size: 18px;
+    }
+
+    @keyframes detailsmotion {
+    0%{margin-top: 90%;}
+    50%{margin-top: 75%;}
+    100%{margin-top: 80%;}
+    }
+
+    @keyframes welcomemotion {
+        0%{opacity: 0%;}
+        50%{opacity: 0%; top:25%;}
+        60%{opacity: 33%; top:20%;}
+        70%{opacity: 66%; top:25%;}
+        80%{opacity: 100%; top:25%;}
+        90%{top:20%;}
+        100%{top:25%;}
+    }
+}
+@media only screen and (max-width: 381px) {
+    body{
+        background-size: 140%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #Welcome{
+        top: 15%;
+        font-size: 15px;
+        -webkit-text-stroke-width: 1%;
+    }
+    .details{
+        margin-top: 80%;
+    }
+    #humanlovescat{
+        float: none;
+        width: 100%;
+    }
+    .boxForText p{
+        font-size: 16px;
+    }
+    .box4{
+        float: none;
+        width: 100%;
+    }
+    .box4 p{
+        font-size: 16px;
+    }
+
+    /* adopt site */
+    .parsize{
+        font-size: 18px;
+    }
+
+    @keyframes detailsmotion {
+    0%{margin-top: 90%;}
+    50%{margin-top: 75%;}
+    100%{margin-top: 80%;}
+    }
+
+    @keyframes welcomemotion {
+        0%{opacity: 0%;}
+        50%{opacity: 0%; top:15%;}
+        60%{opacity: 33%; top:10%;}
+        70%{opacity: 66%; top:15%;}
+        80%{opacity: 100%; top:15%;}
+        90%{top:10%;}
+        100%{top:15%;}
+    }
+}
+
+@media only screen and (max-width: 182px) {
+    body{
+        background-size: 140%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    #Welcome{
+        top: 10%;
+        font-size: 10px;
+        -webkit-text-stroke-width: 0.1%;
+    }
+    .details{
+        margin-top: 80%;
+    }
+    #humanlovescat{
+        float: none;
+        width: 100%;
+    }
+    .boxForText p{
+        font-size: 16px;
+    }
+    .box4{
+        float: none;
+        width: 100%;
+    }
+    .box4 p{
+        font-size: 16px;
+    }
+
+    /* adopt site */
+    .parsize{
+        font-size: 15px;
+    }
+
+    @keyframes detailsmotion {
+    0%{margin-top: 90%;}
+    50%{margin-top: 75%;}
+    100%{margin-top: 80%;}
+    }
+
+    @keyframes welcomemotion {
+        0%{opacity: 0%;}
+        50%{opacity: 0%; top:10%;}
+        60%{opacity: 33%; top:5%;}
+        70%{opacity: 66%; top:10%;}
+        80%{opacity: 100%; top:10%;}
+        90%{top:5%;}
+        100%{top:10%;}
+    }
+}
+/* End media */
