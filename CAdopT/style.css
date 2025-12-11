@@ -159,6 +159,47 @@
         }
 /* End Button For adoptpage */
 
+/* catList */
+
+        #catList li{
+            text-decoration: none;
+            list-style-type: none;
+            margin: 2%;
+            display: inline-block;
+            position: relative;
+            width: 25%;
+            /* box-sizing: ; */
+            border: 2px solid #8b6f3f;
+            border-radius: 20%;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        #catList img{
+            
+            /* display:; */
+            margin-top: 10%;
+            width: 70%;
+            height: 70%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 2px solid black;
+            transition: border 1s, border-radius 0.5s;
+        }
+
+        /* hover */
+
+        #catList li:hover{
+            background-color: #8b6f3f;
+            color: white;
+            
+        }
+        #catList li:hover img{
+            border: 5px solid white;
+            border-radius: 30%;
+            
+        }
+
+/* End catList */
+
 /* FORM */
         .box4 {
             position: relative;
@@ -300,6 +341,10 @@
         iframe{
         margin-bottom: 2%;
     }
+     /*  catList li */
+     #catList li{
+        width: 30%;
+     }
 
     @keyframes detailsmotion {
     0%{margin-top: 70%;}
@@ -357,6 +402,10 @@
         font-size: 18px;
     }
 
+    /*  catList li */
+     #catList li{
+        width: 50%;
+     }
     @keyframes detailsmotion {
     0%{margin-top: 90%;}
     50%{margin-top: 75%;}
@@ -413,7 +462,10 @@
     .parsize{
         font-size: 18px;
     }
-
+     /*  catList li */
+     #catList li{
+        width: 70%;
+     }
     @keyframes detailsmotion {
     0%{margin-top: 90%;}
     50%{margin-top: 75%;}
@@ -489,3 +541,4 @@
     }
 }
 /* End media */
+
