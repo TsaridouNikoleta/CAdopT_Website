@@ -173,7 +173,7 @@
             border-radius: 20%;
             transition: background-color 0.5s, color 0.5s;
         }
-        #catList img{
+        .catListImg{
             
             /* display:; */
             margin-top: 10%;
@@ -199,6 +199,69 @@
         }
 
 /* End catList */
+
+/* Modal For Bio's cat */
+
+        .modalBioCat{
+            display: none;
+            position: fixed;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            overflow:auto;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .bioCat{
+            background-color: #fbf5af;
+            /* margin-bottom: 20%; */
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 3%;
+            padding-top: 2%;
+            /* width: 20%;
+            height: 0%; */
+            border-radius: 10%;
+            border: 10px solid #8b6f3f;
+            align-items: center;
+        }
+
+        .imgCatModal{
+            /* float: left; */
+            width: 100%;
+            border: 5px solid #8b6f3f;
+            box-sizing: border-box;
+        }
+        .bioCat table{
+            padding: 5%;
+        }
+        .bioCat th, td{
+            padding-right: 2%;
+            text-align: left;
+            font-size: 30px;
+        }       
+
+        /* The Close Button */
+        .close {
+        color: #8b6f3f;
+        float: right;
+        font-size: 70px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+/* End Modal For Bio's cat */
 
 /* FORM */
         .box4 {
@@ -541,4 +604,5 @@
     }
 }
 /* End media */
+
 
